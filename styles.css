@@ -1,23 +1,62 @@
+/* Apply Times New Roman to the body text */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* Light blue */
-    color: #333;
+    font-family: "Times New Roman", serif;
+}
+
+/* Header: Use Merriweather font for 'Private Swim Lessons' */
+header h1 {
+    font-family: 'Merriweather', serif;
     text-align: center;
 }
 
-header {
-    background-color: #0077cc; /* Dark blue */
-    color: white;
-    padding: 20px;
-    font-size: 24px;
+/* Section headers: Use Merriweather font for all section titles */
+h2, h3 {
+    font-family: 'Merriweather', serif;
+    text-align: left;
 }
 
-h2 {
-    color: #0077cc;
+/* Center the table */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;  /* Adjusts the table's width */
 }
 
-footer {
-    background-color: #0077cc;
-    color: white;
+/* Style the table */
+th, td {
+    border: 1px solid #ccc;
     padding: 10px;
+    text-align: center;
+}
+
+/* Light turquoise background inside the table */
+td {
+    background-color: #afeeee;
+}
+
+/* Style the table headers */
+th {
+    background-color: #8ed1c4;  /* Lighter turquoise for the header */
+    font-weight: bold;
+}
+
+/* Left-align the text in the 'Benefits of Lessons' list and the cancellation policy note */
+ul li, p {
+    text-align: left;
+    font-family: "Times New Roman", serif;
+}
+
+/* Style links */
+a {
+    color: #0000ee;
+    text-decoration: none;
+}
+
+/* Footer style */
+footer {
+    text-align: center;
+    font-family: "Times New Roman", serif;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
 }
