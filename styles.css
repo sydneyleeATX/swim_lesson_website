@@ -19,7 +19,7 @@ h2, h3 {
 table {
     margin: 20px auto;
     border-collapse: collapse;
-    width: 80%;  /* Adjusts the table's width */
+    width: 80%;
 }
 
 /* Style the table */
@@ -36,7 +36,7 @@ td {
 
 /* Style the table headers */
 th {
-    background-color: #8ed1c4;  /* Lighter turquoise for the header */
+    background-color: #8ed1c4;
     font-weight: bold;
 }
 
@@ -59,4 +59,45 @@ footer {
     margin-top: 20px;
     padding: 10px;
     background-color: #f0f0f0;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #8ed1c4;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #afeeee;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
