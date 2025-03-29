@@ -40,18 +40,19 @@ th, td {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
+    color: white;
 }
 
-/* Light turquoise background inside the table */
+/* Ocean blue background inside the table */
 td {
-    background-color: #afeeee;
+    background-color: #468cce;
 }
 
 
 
 /* Style the table headers */
 th {
-    background-color: rgb(224 240 255);
+    background-color: #468cce;
     font-weight: bold;
 }
 
