@@ -43,11 +43,26 @@ h2, h3 {
     grid-column: 2;
 }
 
+/*This container aligns the about me and contact on left, images on right*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+#about-me, #contact {
+    grid-column: 1;
+}
+#imageCollage {
+    grid-column: 2;
+}
+
 /* Align the table to the right */
 table {
     margin: 20px 0 20px auto; /* 0 auto aligns right */
     border-collapse: collapse;
-    width: 80%;
+    width: 40%;
 }
 
 /* Style the table */
@@ -81,15 +96,6 @@ ul li, p {
 a {
     color: #0091ff;
     text-decoration: none;
-}
-
-/* Footer style */
-footer {
-    text-align: center;
-    font-family: "Times New Roman", serif;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f0f0f0;
 }
 
 /* Dropdown menu styling */
@@ -142,6 +148,6 @@ footer {
 
 #instructorPortrait {
     float: right;
-    width: 10%; /* Make the image take up half the screen width */
+    width: 40%; /* Make the image take up half the screen width */
     height: auto; /* Maintain aspect ratio */
 }
