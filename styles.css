@@ -26,7 +26,7 @@ html {
 }
 
 /* Section headers: Use Merriweather font for all section titles */
-h2, h3 {
+h3 {
     font-family: 'Garamond', serif;
     text-align: left;
 }
@@ -51,7 +51,7 @@ h2, h3 {
 #pricing {
     grid-column: 2; /* Pricing on the right */
 }
-#pricing h2 {
+#pricing-header {
     text-align: right; /* Align pricing header to the right */
 }
 #pricing table {
@@ -60,7 +60,7 @@ h2, h3 {
 
 /*This container aligns the about me and contact on left, images on right*/
 .container {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     width: 80%;
@@ -165,4 +165,12 @@ a {
     float: right;
     width: 40%; /* Make the image take up half the screen width */
     height: auto; /* Maintain aspect ratio */
+}
+#tubingRiver {
+    width: 30%;
+    height: auto;
+}
+#adultClass {
+    width: 30%;
+    height: auto;
 }
