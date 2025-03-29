@@ -8,7 +8,7 @@ html {
 }
 
 /* Header: Bar on Title Page' */
-titlePage { /* Corrected selector to target header */
+#titlePage { /* Corrected selector to target header. added # */
     background-color: #aeeaf9;
     padding: 20px;
     text-align: center;
@@ -24,10 +24,17 @@ titlePage { /* Corrected selector to target header */
     text-align: center;
     font-family: 'Garamond', serif;
 }
+
 /* Section headers: Use Merriweather font for all section titles */
 h2, h3 {
     font-family: 'Garamond', serif;
     text-align: left;
+}
+
+#benefits-of-lessons {
+    list-style-type: square; /* Change bullet style */
+    font-size: 18px;
+    float:left
 }
 
 /*This container aligns the pricing and scheduling side by side*/
