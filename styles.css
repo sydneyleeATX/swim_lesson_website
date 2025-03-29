@@ -142,6 +142,6 @@ footer {
 
 #instructorPortrait {
     float: right;
-    width: 50%; /* Make the image take up half the screen width */
+    width: 10%; /* Make the image take up half the screen width */
     height: auto; /* Maintain aspect ratio */
 }
