@@ -34,6 +34,8 @@ td {
     background-color: #afeeee;
 }
 
+
+
 /* Style the table headers */
 th {
     background-color: #8ed1c4;
@@ -100,4 +102,18 @@ footer {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+#aboutMe {
+    color: black;
+    font-size: 18px;
+    padding: 10px 400px 0 0;
+    clear: both;
+
+}
+
+#instructorPortrait {
+    float: right;
+    width: 50%; /* Make the image take up half the screen width */
+    height: auto; /* Maintain aspect ratio */
 }
