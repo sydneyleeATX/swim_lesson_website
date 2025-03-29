@@ -28,9 +28,24 @@ h2, h3 {
     text-align: left;
 }
 
-/* Center the table */
-table {
+/*This container aligns the pricing and scheduling side by side*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
     margin: 20px auto;
+}
+#schedule {
+    grid-column: 1;
+}
+#pricing {
+    grid-column: 2;
+}
+
+/* Align the table to the right */
+table {
+    margin: 20px 0 20px auto; /* 0 auto aligns right */
     border-collapse: collapse;
     width: 80%;
 }
@@ -38,7 +53,7 @@ table {
 /* Style the table */
 th, td {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 10px 5px; /* Reduced left and right padding */
     text-align: center;
     color: white;
 }
@@ -64,7 +79,7 @@ ul li, p {
 
 /* Style links */
 a {
-    color: #0000ee;
+    color: #0091ff;
     text-decoration: none;
 }
 
@@ -118,12 +133,11 @@ footer {
     display: block;
 }
 
-#aboutMe {
+#biography {
     color: black;
     font-size: 18px;
     float:left;
     width: 50%;
-
 }
 
 #instructorPortrait {
