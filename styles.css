@@ -21,10 +21,12 @@ titlePage { /* Corrected selector to target header */
 
 #titlePage h1 {
     margin: 0;
+    text-align: center;
+    font-family: 'Garamond', serif;
 }
 /* Section headers: Use Merriweather font for all section titles */
 h2, h3 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Garamond', serif;
     text-align: left;
 }
 
@@ -37,10 +39,16 @@ h2, h3 {
     margin: 20px auto;
 }
 #schedule {
-    grid-column: 1;
+    grid-column: 1; /* Schedule on the left */
 }
 #pricing {
-    grid-column: 2;
+    grid-column: 2; /* Pricing on the right */
+}
+#pricing h2 {
+    text-align: right; /* Align pricing header to the right */
+}
+#pricing table {
+    margin-left: auto; /* Align table to the right */
 }
 
 /*This container aligns the about me and contact on left, images on right*/
