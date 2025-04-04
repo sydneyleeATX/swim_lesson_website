@@ -163,14 +163,19 @@ a {
 
 #instructorPortrait {
     float: right;
-    width: 40%; /* Make the image take up half the screen width */
+    width: 300px; /* Make the image take up half the screen width */
     height: auto; /* Maintain aspect ratio */
 }
 #tubingRiver {
-    width: 30%;
+    width: 100px;
     height: auto;
 }
 #adultClass {
-    width: 30%;
+    width: 200px;
+    height: auto;
+}
+
+#swimLesson {
+    width: 200px;
     height: auto;
 }
