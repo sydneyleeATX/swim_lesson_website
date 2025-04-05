@@ -1,139 +1,135 @@
+/* Reset & base styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f2f9fc;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-#titlePage {
-    background-color: #00aaff;
+header#titlePage {
+    background-color: #0077b6;
     color: white;
     text-align: center;
-    padding: 1.5rem 0;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
 }
 
 #slogan {
     font-style: italic;
-    font-size: 1.2rem;
-    margin-top: -10px;
+    margin-top: 0.5rem;
 }
 
-#benefits-of-lessons-container {
+.container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+    justify-content: space-between;
     padding: 2rem;
+    gap: 2rem;
 }
 
-#benefits-box {
-    flex: 1 1 300px;
-    padding: 1rem;
+#benefits-container {
+    align-items: center;
 }
 
-#benefits-box ul {
-    list-style-type: disc;
-    padding-left: 20px;
+#benefits-of-lessons {
+    flex: 1;
+    min-width: 250px;
 }
 
-#swimLesson-box {
-    flex: 1 1 300px;
-    padding: 1rem;
-    text-align: center;
+#sellingPoints li {
+    margin-bottom: 0.5rem;
 }
 
 #swimLesson {
-    width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
-#container1,
-#container2 {
+#container1 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #e7f5fe;
-    padding: 2rem;
-    margin-top: 1rem;
+    justify-content: space-between;
+    gap: 3rem;
 }
 
-#schedule-box,
-#pricing-box,
-#about-contact-box,
-#imageCollage {
-    flex: 1 1 300px;
-    padding: 1rem;
-    margin: 1rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+#schedule {
+    flex: 1;
+    margin-right: 2rem;
+    max-width: 50%;
 }
 
-#schedule h2,
-#pricing h2,
-#about-me h2,
-#contact h2 {
-    color: #0077cc;
-    margin-top: 0;
+#schedule ul li {
+    margin-bottom: 0.5rem;
+}
+
+#pricing {
+    flex: 1;
+    max-width: 50%;
 }
 
 #pricing table {
     width: 100%;
     border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-#pricing th,
-#pricing td {
+#pricing th, #pricing td {
     border: 1px solid #ccc;
-    padding: 0.5rem;
+    padding: 0.75rem;
     text-align: left;
 }
 
-#pricing th {
-    background-color: #0077cc;
-    color: white;
+#pricing-header {
+    margin-top: 0;
 }
 
-#biography {
-    margin-bottom: 1rem;
+#container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.left-column {
+    flex: 1;
+    max-width: 50%;
+}
+
+#about-me, #contact {
+    margin-bottom: 2rem;
 }
 
 #imageCollage {
+    flex: 1;
+    max-width: 50%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 1rem;
     align-items: center;
-    text-align: center;
 }
 
 #imageCollage img {
-    max-width: 150px;
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 0.5rem;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 @media (max-width: 768px) {
-    #benefits-of-lessons-container,
-    #container1,
-    #container2 {
+    .container, #container1, #container2 {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
     }
 
-    #swimLesson {
+    #schedule, #pricing, .left-column, #imageCollage {
         max-width: 100%;
     }
 
-    #imageCollage {
-        flex-direction: column;
+    #imageCollage img {
+        max-width: 90%;
     }
 }
