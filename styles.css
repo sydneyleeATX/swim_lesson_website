@@ -1,186 +1,139 @@
-/* Apply Times New Roman to the body text */
 body {
-    font-family: "Times New Roman", serif;
-}
-
-html {
-    background-color: rgb(174, 234, 249);
-}
-
-/* Header: Bar on Title Page' */
-#titlePage { /* Corrected selector to target header. added # */
-    background-color: #aeeaf9;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-#titlePage h1 {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f9fc;
     margin: 0;
+    padding: 0;
+}
+
+#titlePage {
+    background-color: #00aaff;
+    color: white;
     text-align: center;
-    font-family: 'Garamond', serif;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Section headers: Use Merriweather font for all section titles */
-h3 {
-    font-family: 'Garamond', serif;
-    text-align: left;
+#slogan {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: -10px;
 }
 
-#benefits-of-lessons {
-    list-style-type: square; /* Change bullet style */
-    font-size: 18px;
-    float:left
-}
-
-/*This container aligns the pricing and scheduling side by side*/
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    width: 80%;
-    margin: 20px auto;
-}
-#schedule {
-    grid-column: 1; /* Schedule on the left */
-}
-#pricing {
-    grid-column: 2; /* Pricing on the right */
-}
-#pricing-header {
-    text-align: right; /* Align pricing header to the right */
-}
-#pricing table {
-    margin-left: auto; /* Align table to the right */
-}
-
-/*This container aligns the about me and contact on left, images on right*/
-.container {
+#benefits-of-lessons-container {
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    width: 80%;
-    margin: 20px auto;
-}
-#about-me, #contact {
-    grid-column: 1;
-}
-#imageCollage {
-    grid-column: 2;
-    float: right;
-    right-margin: 10px;
-}
-
-/* Align the table to the right */
-table {
-    margin: 20px 0 20px auto; /* 0 auto aligns right */
-    border-collapse: collapse;
-    width: 40%;
-}
-
-/* Style the table */
-th, td {
-    border: 1px solid #ccc;
-    padding: 10px 5px; /* Reduced left and right padding */
-    text-align: center;
-    color: white;
-}
-
-/* Ocean blue background inside the table */
-td {
-    background-color: #468cce;
-}
-
-
-
-/* Style the table headers */
-th {
-    background-color: #468cce;
-    font-weight: bold;
-}
-
-/* Left-align the text in the 'Benefits of Lessons' list and the cancellation policy note */
-ul li, p {
-    text-align: left;
-    font-family: "Times New Roman", serif;
-}
-
-/* Style links */
-a {
-    color: #0091ff;
-    text-decoration: none;
-}
-
-/* Dropdown menu styling */
-.dropdown {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    display: inline-block;
-}
-
-.dropbtn {
-    background-color: #8ed1c4;
-    color: white;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background-color: white;
-    min-width: 120px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    padding: 2rem;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 10px 12px;
-    text-decoration: none;
-    display: block;
+#benefits-box {
+    flex: 1 1 300px;
+    padding: 1rem;
 }
 
-.dropdown-content a:hover {
-    background-color: #afeeee;
+#benefits-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-#biography {
-    color: black;
-    font-size: 18px;
-    float: left;
-    width: 50%;
-}
-
-#instructorPortrait {
-    float: right;
-    width: 300px; /* Make the image take up half the screen width */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px;
-}
-#tubingRiver {
-    float: right;
-    width: 100px;
-    height: auto;
-}
-#adultClass {
-    width: 200px;
-    height: auto;
+#swimLesson-box {
+    flex: 1 1 300px;
+    padding: 1rem;
+    text-align: center;
 }
 
 #swimLesson {
-    width: 300px;
+    width: 100%;
+    max-width: 350px;
     height: auto;
-    float: right;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#container1,
+#container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #e7f5fe;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+#schedule-box,
+#pricing-box,
+#about-contact-box,
+#imageCollage {
+    flex: 1 1 300px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#schedule h2,
+#pricing h2,
+#about-me h2,
+#contact h2 {
+    color: #0077cc;
+    margin-top: 0;
+}
+
+#pricing table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#pricing th,
+#pricing td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+#pricing th {
+    background-color: #0077cc;
+    color: white;
+}
+
+#biography {
+    margin-bottom: 1rem;
+}
+
+#imageCollage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#imageCollage img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0.5rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    #benefits-of-lessons-container,
+    #container1,
+    #container2 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #swimLesson {
+        max-width: 100%;
+    }
+
+    #imageCollage {
+        flex-direction: column;
+    }
 }
