@@ -124,6 +124,34 @@ h2 {
     align-items: center;
 }
 
+.image-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.image-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.image-row img {
+    width: 100%;
+    height: auto;
+}
+
+#instructorPortrait {
+    max-width: 50%;
+}
+
+#adultClass {
+    max-width: 50%;
+}
+
+#tubingRiver {
+    width: 100%;
+}
+
 #imageCollage img {
     width: 100%;
     max-width: 300px;
