@@ -24,7 +24,7 @@ Features:
 - **CSS**
   - `styles.css` — website styling  
 - **Media assets**
-  - Photos such as `swim_portrait.jpg`, `coaching_backfloat.jpg`, `tubing.jpg`  
+  - Photos such as `swim_portrait.jpg` and `coaching_backfloat.jpg`  
 - **SEO & indexing tools**
   - `robots.txt` — tells search engines what to crawl  
   - `sitemap.xml` — maps the site's structure for better indexing  
