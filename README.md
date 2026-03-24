@@ -1,10 +1,10 @@
 # Swim Lessons Website
 
 ## Project Overview
-**RBC Private Swim Lessons** is a simple, clean, and SEO-optimized website promoting swim instruction services in West Houston, TX (Memorial, Briar Forest). Built with static files and integrated with Square for seamless booking functionality.
+**RBC Private Swim Lessons** is a simple, clean, and SEO-optimized website promoting swim instruction services in West Houston, TX (Energy Corridor / Ashford Area). Built with static files and integrated with Square for seamless booking functionality.
 
 ## Live Demo
-Explore the live site: [RBC Private Swim Lessons](https://sydneyleeatx.github.io/swim_lesson_website/)
+Explore the live site: [West Houston Private Swim Lessons](https://sydneyleeatx.github.io/swim_lesson_website/)
 
 Features:
 - Service options and pricing
